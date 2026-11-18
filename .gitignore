@@ -1,0 +1,5 @@
+.env
+app/.env
+node_modules/
+.vagrant/
+*.log
