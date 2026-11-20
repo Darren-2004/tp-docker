@@ -16,3 +16,4 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", path: "provision.sh"
 end
+config.vm.network "forwarded_port", guest: 8081, host: 8081

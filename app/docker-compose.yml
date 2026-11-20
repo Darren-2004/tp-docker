@@ -52,6 +52,17 @@ services:
       - frontend
     restart: unless-stopped
 
+adminer:
+    image: adminer:latest
+    container_name: tp_adminer
+    ports:
+      - "8081:8080"
+    networks:
+      - backend
+    profiles:
+      - admin
+    restart: unless-stopped
+    
 volumes:
   pgdata:
 
